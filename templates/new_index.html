@@ -1,0 +1,27 @@
+<!doctype html>
+<title>Ticker Lookup App</title>
+<link rel=stylesheet type=text/css href='{{ url_for('static',filename='style_lulu.css')}}'>
+<div class=page>
+  <h1>Ticker Lookup App</h1>
+  <div class=metanav>
+
+    <form id='ticker_symbol' method='post' action='' >
+      <p>
+    Enter ticker symbol: <input type='text' name='symbol' />
+      </p>
+      <p>
+      Data type: <br />
+      <input type='radio' name='answer_from_datatype' value='Open' /> Open <br />
+      <input type='radio' name='answer_from_datatype' value='High' /> High <br />
+      <input type='radio' name='answer_from_datatype' value='Low' /> Low  <br />
+      <input type='radio' name='answer_from_datatype' value='Close' /> Close <br />
+      <input type='radio' name='answer_from_datatype' value='Volume' /> Volume <br />
+      </p>
+      <p>
+    <input type='submit' value='Submit'/>
+      </p>
+    </form>
+
+  </div>
+</div>
+</html>
